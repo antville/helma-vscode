@@ -2,7 +2,7 @@
     "name": "helma-skin",
     "displayName": "Helma Skin",
     "description": "Syntax support for Helma’s *.skin files",
-    "version": "1.0.15",
+    "version": "1.0.16",
     "engines": {
         "vscode": "0.10.x"
     },
