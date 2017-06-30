@@ -2,7 +2,7 @@
     "name": "helma-skin",
     "displayName": "Helma Skin",
     "description": "Syntax support for Helma’s *.skin files",
-    "version": "1.0.12",
+    "version": "1.0.14",
     "engines": {
         "vscode": "0.10.x"
     },
@@ -43,6 +43,10 @@
                 }
             }
         ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/antville/helma-vscode.git"
     },
     "homepage": "http://helma.org",
     "icon": "images/icon.png"
