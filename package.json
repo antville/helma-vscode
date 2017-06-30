@@ -1,0 +1,49 @@
+{
+    "name": "helma-skin",
+    "displayName": "Helma Skin",
+    "description": "Syntax support for Helma’s *.skin files",
+    "version": "1.0.12",
+    "engines": {
+        "vscode": "0.10.x"
+    },
+    "publisher": "p3k",
+    "author": {
+        "name": "Tobi Schäfer"
+    },
+    "license": "Apache-2.0",
+    "categories": [
+        "Languages"
+    ],
+    "galleryBanner": {
+        "color": "#99c",
+        "theme": "light"
+    },
+    "contributes": {
+        "languages": [
+            {
+                "id": "skin",
+                "aliases": [
+                    "Helma Skin",
+                    "skin"
+                ],
+                "extensions": [
+                    ".skin"
+                ],
+                "configuration": "language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "skin",
+                "scopeName": "text.html.skin",
+                "path": "syntaxes/skin.tmLanguage.json",
+                "embeddedLanguages": {
+                    "text.html": "html",
+                    "source.css": "css"
+                }
+            }
+        ]
+    },
+    "homepage": "http://helma.org",
+    "icon": "images/icon.png"
+}
