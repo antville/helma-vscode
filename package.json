@@ -1,63 +1,70 @@
 {
-    "name": "helma-skin",
-    "displayName": "Helma Skin",
-    "description": "Syntax support for Helma’s *.skin files",
-    "version": "1.0.17",
-    "engines": {
-        "vscode": "0.10.x"
-    },
-    "publisher": "p3k",
-    "author": {
-        "name": "Tobi Schäfer"
-    },
-    "license": "Apache-2.0",
-    "categories": [
-        "Languages"
-    ],
-    "galleryBanner": {
-        "color": "#99c",
-        "theme": "light"
-    },
-    "contributes": {
-        "languages": [
-            {
-                "id": "skin",
-                "aliases": [
-                    "Helma Skin",
-                    "skin"
-                ],
-                "extensions": [
-                    ".skin"
-                ],
-                "configuration": "language-configuration.json"
-            },
-            {
-                "id": "javascript",
-                "aliases": [
-                    "Helma Action",
-                    "javascript"
-                ],
-                "extensions": [
-                    ".hac"
-                ]
-            }
-        ],
-        "grammars": [
-            {
-                "language": "skin",
-                "scopeName": "text.html.skin",
-                "path": "syntaxes/skin.tmLanguage.json",
-                "embeddedLanguages": {
-                    "text.html": "html",
-                    "source.css": "css"
-                }
-            }
-        ]
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/antville/helma-vscode.git"
-    },
-    "homepage": "http://helma.org",
-    "icon": "images/icon.png"
+	"name": "helma-skin",
+	"displayName": "Helma Skin",
+	"description": "Syntax support for Helma’s *.skin files",
+	"version": "1.0.18",
+	"engines": {
+		"vscode": "0.10.x"
+	},
+	"publisher": "p3k",
+	"author": {
+		"name": "Tobi Schäfer"
+	},
+	"license": "Apache-2.0",
+	"categories": [
+		"Language Packs"
+	],
+	"keywords": [
+		"helma",
+		"server-side javascript",
+		"syntax highlighting"
+	],
+	"galleryBanner": {
+		"color": "#99c",
+		"theme": "light"
+	},
+	"qna": "marketplace",
+	"contributes": {
+		"languages": [
+			{
+				"id": "skin",
+				"aliases": [
+					"Helma Skin",
+					"skin"
+				],
+				"extensions": [
+					".skin"
+				],
+				"configuration": "language-configuration.json"
+			},
+			{
+				"id": "javascript",
+				"aliases": [
+					"Helma Action",
+					"javascript"
+				],
+				"extensions": [
+					".hac"
+				]
+			}
+		],
+		"grammars": [
+			{
+				"language": "skin",
+				"scopeName": "text.html.skin",
+				"path": "syntaxes/skin.tmLanguage.json",
+				"embeddedLanguages": {
+					"text.html": "html",
+					"source.css": "css",
+					"source.js": "javascript"
+				}
+			}
+		]
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/antville/helma-vscode.git"
+	},
+	"homepage": "https://github.com/antville/helma",
+	"icon": "images/icon.png"
 }

@@ -1,75 +1,75 @@
 {
-  "scopeName": "text.html.skin",
-  "name": "skin",
-  "fileTypes": ["skin"],
+	"scopeName": "text.html.skin",
+	"name": "skin",
+	"fileTypes": ["skin"],
 	"injections": {
 		"text.html.skin - (meta.tag.block.any.html tag-stuff)": {
 			"patterns": [{
-        "include": "#macro"
-      }]
-    }
-  },
-  "patterns": [{
-    "include": "text.html.basic"
-  }, {
-    "include": "#subskin"
-  }, {
-    "include": "#comment"
-  }, {
-    "include": "#macro"
-  }],
-  "repository": {
-    "macro": {
-      "patterns": [{
-        "begin": "(<%)\\s*(\\S*)",
-        "beginCaptures": {
-          "1": {
-            "name": "punctuation.definition.tag.skin"
-          },
-          "2": {
-            "name": "keyword.other.unit.skin strong.skin"
-          }
-        },
-        "end": "%>",
-        "name": "punctuation.definition.tag.skin",
-        "patterns": [{
-          "include": "#comment"
-        }, {
-          "include": "#macro"
-        }, {
-          "include": "#filter"
-        }, {
-          "include": "text.html.basic#tag-stuff"
-        }]
-      }]
-    },
-    "filter": {
-      "patterns": [{
-        "begin": "(\\|)\\s*(\\S+)",
-        "beginCaptures": {
-          "1": {
-            "name": "punctuation.definition.tag.skin"
-          },
-          "2":{
-            "name": "keyword.other.unit.skin emphasis.skin"
-          }
-        },
-        "end": "\\s"
-      }]
-    },
-    "subskin": {
-      "patterns": [{
-        "begin": "<%\\s*#",
-        "end": "%>",
-        "name": "strong.skin"
-      }]
-    },
-    "comment": {
-      "patterns": [{
-        "begin": "<%\\s*//",
-        "end": "%>",
-        "name": "comment.skin"
-      }]
-    }
-  }
+				"include": "#macro"
+			}]
+		}
+	},
+	"patterns": [{
+		"include": "text.html.basic"
+	}, {
+		"include": "#subskin"
+	}, {
+		"include": "#comment"
+	}, {
+		"include": "#macro"
+	}],
+	"repository": {
+		"macro": {
+			"patterns": [{
+				"begin": "(<%)\\s*(\\S*)",
+				"beginCaptures": {
+					"1": {
+						"name": "punctuation.definition.tag.skin"
+					},
+					"2": {
+						"name": "keyword.other.unit.skin strong.skin"
+					}
+				},
+				"end": "%>",
+				"name": "punctuation.definition.tag.skin",
+				"patterns": [{
+					"include": "#comment"
+				}, {
+					"include": "#macro"
+				}, {
+					"include": "#filter"
+				}, {
+					"include": "text.html.basic#tag-stuff"
+				}]
+			}]
+		},
+		"filter": {
+			"patterns": [{
+				"begin": "(\\|)\\s*(\\S+)",
+				"beginCaptures": {
+					"1": {
+						"name": "punctuation.definition.tag.skin"
+					},
+					"2":{
+						"name": "keyword.other.unit.skin emphasis.skin"
+					}
+				},
+				"end": "\\s"
+			}]
+		},
+		"subskin": {
+			"patterns": [{
+				"begin": "<%\\s*#",
+				"end": "%>",
+				"name": "strong.skin"
+			}]
+		},
+		"comment": {
+			"patterns": [{
+				"begin": "<%\\s*//",
+				"end": "%>",
+				"name": "comment.skin"
+			}]
+		}
+	}
 }
